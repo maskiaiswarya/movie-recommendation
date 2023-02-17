@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+       
+        <title>Recommendopedia</title>
+      
+        <link rel="stylesheet" href='../staticFiles/styles.css' />
+        <style>
+         
+         div {
+            background-image: url("https://ddmcwelcycgld.cloudfront.net/upload/imgs/%5BLetter%20Paper%5DThe%20Colour%20of%20the%20Nature_1.jpg");
+            width:250px;
+            border: 10px solid purple;
+            border-style: double;
+            padding: 50px;
+            margin: 10px;
+            vertical-align: text-top;
+         }
+         </style>
+   </head>
+
+<body>
+   <center>
+      <img src="https://i.gifer.com/origin/41/4109c3f1d362403a87c5ebfd4bb382ee.gif" width="200px" height="80px" align="left">
+   </center>
+</body>
+
+
+<style>
+body {
+  background-image: url("https://repository-images.githubusercontent.com/275336521/20d38e00-6634-11eb-9d1f-6a5232d0f84f");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+</style>
+
+<body bgcolor="white"></body>
+<body><center>
+   
+   <hr>
+   <font color="white">
+      <h1 class="title">
+         <span class="title-word title-word-1">MOVIE</span>
+         <span class="title-word title-word-2">RECOMMENDATION</span>
+         <span class="title-word title-word-3">SYSTEM</span>
+       </h1>
+     
+  </font>
+  <hr>
+</center>
+
+   <body>
+<center>
+<h2>
+          <form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
+<font color="white">
+
+   <label id="choose" for="movie">Choose a Movie:</label>
+    <select name="usermovie" class="selectpicker form-control" id="select" style="width: 250px; font-size: 25px;>
+
+    <option value="Avatar">Avatar</option>
+    <option value="Toy Story">Toy Story</option>
+    <option value="The Avengers">The Avengers</option>
+    <option value="Iron Man 2">Iron Man 2</option>
+    <option value="The Jungle Book">The Jungle Book</option>
+    <option value="Interstellar">Interstellar</option>
+    <option value="Spider-Man 3">Spider-Man 3</option>
+    <option value="Cars 2">Cars 2</option>
+    <option value="Tangled">Tangled</option>
+    <option value="Lucy">Lucy</option>
+    <option value="King Kong">King Kong</option>
+    <option value="Jurassic World">Jurassic World</option>
+    <option value="Four Lions">Four Lions</option>
+    <option value="Frozen">Frozen</option>
+    <option value="Titanic">Titanic</option>
+    <option value="Bolt">Bolt</option>
+    <option value="Kung Fu Panda 2">Kung Fu Panda 2</option>
+    <option value="Gravity">Gravity</option>  
+    <option value="The Smurfs">The Smurfs</option>
+    <option value="Life of Pi">Life of Pi</option>
+    <option value="Spy Kids 3-D: Game Over">Spy Kids 3-D: Game Over</option>
+    <option value="Lion of the Desert">Lion of the Desert</option>
+    <option value="Snakes on a Plane">Snakes on a Plane</option>
+    <option value="Black Water Transit">Black Water Transit</option>
+    <option value="Snakes on a Plane">Snakes on a Plane</option>    
+    <option value="The Dark Knight Rises">The Dark Knight Rises</option>
+              {% for o in data %}
+              <option value="{{ o.name }}">{{ o.name }}</option>
+              {% endfor %}
+            </select>
+<input type="submit" value="Recommend" id="stylebutton" style="height: 35px; width: 200px; font-size:25px">     
+<br><br>
+   </form>
+
+</h2>
+
+</font>
+<div>
+<h2>
+   <center>
+      <p class="tex-center" style="color:red;">Welcome To RECOMMENDOPEDIA</p>
+   </center>
+   {% if msg1 %}
+   <center>
+       <p class="tex-center" style="color:blue;">{{msg1}}</p>
+   </center>
+   {% endif %}
+   {% if recom1 %}
+   <center>
+       <p class="tex-center" style="color:black;">{{recom1}}</p>
+   </center>
+   {% endif %}
+   {% if recom2 %}
+   <center>
+       <p class="tex-center" style="color:black;">{{recom2}}</p>
+   </center>
+   {% endif %}
+   {% if recom3 %}
+   <center>
+       <p class="tex-center" style="color:black;">{{recom3}}</p>
+    </center>
+   {% endif %}
+   {% if recom4 %}
+   <center>
+       <p class="tex-center" style="color:black;">{{recom4}}</p>
+   </center>
+   {% endif %}
+   {% if recom5 %}
+   <center>
+       <p class="tex-center" style="color:black;">{{recom5}}</p>
+    </center>
+   {% endif %}
+</h2>
+</div>
+   </center>
+</font></p>
+
+     </body>
+</html>

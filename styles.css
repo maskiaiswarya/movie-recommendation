@@ -1,0 +1,62 @@
+h2{
+    color:white
+}
+h1{
+  color:orange
+}
+#stylebutton
+{
+  width: 60px;
+  height: 30px;
+  background-color: white;
+}
+#stylebutton:hover
+{
+  background-color: rgb(206, 161, 215);
+}
+#choose{
+    font-size:larger
+}
+select {
+    color: rgb(162, 8, 129);
+}
+option {
+        background-color: white;
+}
+#choose{
+  color:white;
+  font-size:larger;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #f75f0d;
+  --color-2: #0c80b1;
+  --color-3: yellow;
+}
+
+.title-word-2 {
+  --color-1: yellow;
+  --color-2: #f75f0d;
+  --color-3: #0c80b1;
+}
+
+.title-word-3 {
+  --color-1: #0c80b1;
+  --color-2: yellow;
+  --color-3: #f75f0d;
+}
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
